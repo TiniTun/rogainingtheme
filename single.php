@@ -4,37 +4,41 @@
  *
  */
 
-?>
-				<article class="news-box">
-					<div class="row-fluid">
-						<div class="span4">
-							<a href="#" class="thumbnail">
-								<img src="http://rogaining.ru/images/stories/news/rrc2012_logo.png" alt="">
-							</a>
-						</div>
-						<div class="span8">
-							<header>
-								<h2>9-й Чемпионат России по рогейну 2012</h2>
-							</header>
-							<p>Продолжается заявка на 9-й Чемпионат России по рогейну, который состоится 21 - 22 июля 2012 года в Ленинградской области. Приём заявок продлится до 10 июля 2012 г. Для оплаты стартового взноса в льготном размере нужно заявиться и оплатить взнос до 30 июня 2012 года. </p>
-							<a href="#" class="btn pull-right">Подробнее >></a></p>
-						</div>
-					</div>
-				</article>
+get_header(); ?>
+	
+	<div id="main" class="span8 clearfix" role="main">
 
-				<article class="news-box">
-					<div class="row-fluid">
-						<div class="span4">
-							<a href="#" class="thumbnail">
-								<img src="http://rogaining.ru/images/stories/news/rrc2012_logo.png" alt="">
-							</a>
-						</div>
-						<div class="span8">
-							<header>
-								<h2>9-й Чемпионат России по рогейну 2012</h2>
-							</header>
-							<p>Продолжается заявка на 9-й Чемпионат России по рогейну, который состоится 21 - 22 июля 2012 года в Ленинградской области. Приём заявок продлится до 10 июля 2012 г. Для оплаты стартового взноса в льготном размере нужно заявиться и оплатить взнос до 30 июня 2012 года. </p>
-							<a href="#" class="btn pull-right">Подробнее >></a></p>
-						</div>
-					</div>
-				</article>	
+		<?php while ( have_posts() ) : the_post(); ?>
+
+			<div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+			<?php rog_breadcrumbs(); ?>
+			</div>
+
+			<?php get_template_part( 'content', 'single' ); ?>
+
+			<div id="single-post-nav">
+				<ul class="pager">
+					<li class="previous">
+						<span class="previous-page">
+							<?php previous_post_link( '%link', '<i class="icon-chevron-left"></i>&nbsp;%title' ); ?>
+							<!--a href="http://standardtheme.com/demo/image-post-format/" rel="prev" title="Image Post Format"><i class="icon-chevron-left"></i>&nbsp;Image Post Format</a-->
+						</span>
+					</li>
+					<li class="next">
+						<span class="no-previous-page-link next-page">
+							<?php previous_post_link( '%link', '&nbsp;%title<i class="icon-chevron-right"></i>&nbsp;' ); ?>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<?php comments_template( '', true ); ?>
+
+		<?php endwhile; // end of the loop. ?>
+	</div><!-- #content -->
+
+
+<?php 
+get_sidebar();
+get_footer();
+?>
