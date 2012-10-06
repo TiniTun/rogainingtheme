@@ -8,6 +8,7 @@
 		</div> <!-- /container -->
 	</div><!-- /#wrapper -->
 	<div id="footer" class="clearfix">
+		<?php /* 
 		<div id="footer-widgets" class="clearfix">
 			<div class="container">
 				<div class="row">
@@ -33,7 +34,7 @@
 				</div><!-- /row -->
 			</div><!-- /container -->
 		</div>
-
+		*/?>
 		<div id="sub-floor" class="clearfix">
 			<div class="container">
 				<div class="row">

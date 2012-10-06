@@ -26,7 +26,7 @@ get_header(); ?>
 					</li>
 					<li class="next">
 						<span class="no-previous-page-link next-page">
-							<?php previous_post_link( '%link', '&nbsp;%title<i class="icon-chevron-right"></i>&nbsp;' ); ?>
+							<?php next_post_link( '%link', '&nbsp;%title<i class="icon-chevron-right"></i>&nbsp;' ); ?>
 						</span>
 					</li>
 				</ul>

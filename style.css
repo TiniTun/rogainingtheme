@@ -1100,12 +1100,12 @@ a.post-permalink:hover {
 	border-bottom: 1px solid #eee;
 }
 
-
+/*
 #comments .bypostauthor > .comment-container {
 	background: #f9f9f9;
 	border-right: 5px solid #202020;
 }
-
+*/
 #comments .comment-container .avatar-holder {
 	display: table-cell;
 	vertical-align: top;

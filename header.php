@@ -57,7 +57,7 @@
 				<div id="social-networking" class="clearfix">
 					<ul class="nav social-icons clearfix">
 						<li>
-							<a href="http://twitter.com/standardtheme" class="fademe" target="_blank"><img src="http://standardtheme.com/demo/wp-content/themes/standard/images/social/small/twitter.png" alt=""></a>
+							<a href="http://twitter.com/rogainingperm" class="fademe" target="_blank"><img src="http://standardtheme.com/demo/wp-content/themes/standard/images/social/small/twitter.png" alt=""></a>
 						</li>
 					</ul>
 				</div>
@@ -79,7 +79,7 @@
 					<h1 id="site-title">
 						<a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</h1><!-- /#site-title -->
-					<p><small id="site-description">It's what Willis was talkin' 'bout</small></p>		
+					<p><small id="site-description"><?php bloginfo( 'description' ); ?></small></p>		
 				</div><!-- /#logo -->
 				<!--div id="header-widget">
 					<div id="standard-ad-468x60-3" class="header-widget widget standard-ad-billboard">
